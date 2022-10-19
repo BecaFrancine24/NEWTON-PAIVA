@@ -7,12 +7,60 @@ public class pedido {
 	private int numPedido;
 	private double dataPedido;
 	private String nomeCliente;
-	
-	
-	
-	public String toString() {
-		return "pedido [numPedido=" + numPedido + ", dataPedido=" + dataPedido + ", nomeCliente=" + nomeCliente + "]";
+	private String nomePizza;
+
+
+	public int getNumPedido() {
+		return numPedido;
 	}
+
+
+	public void setNumPedido(int numPedido) {
+		this.numPedido = numPedido;
+	}
+
+
+	public double getDataPedido() {
+		return dataPedido;
+	}
+
+
+
+	public void setDataPedido(double dataPedido) {
+		this.dataPedido = dataPedido;
+	}
+
+
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+
+	public String getNomePizza() {
+		return nomePizza;
+	}
+
+
+	public void setNomePizza(String nomePizza) {
+		this.nomePizza = nomePizza;
+	}
+	
+	
+	void valor(double valor){
+    
+		nomePizza = nomePizza + valor;
+	}
+	
+
+
+
+
 
 
 	public static void main(String[] args) {
@@ -39,6 +87,7 @@ public class pedido {
       
 
     }
+	
 	
 	
 	
