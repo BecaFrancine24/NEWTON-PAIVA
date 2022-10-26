@@ -1,0 +1,67 @@
+pacote br.com.moto;
+importar java.util.ArrayList;
+
+agência de classe pública {
+	String nome;
+	
+	ArrayList<Moto> listaMotos = novo ArrayList<Moto>();
+	
+	public void adicionarMoto (Moto moto) {
+		listaMotos.add(moto);
+	 }
+	
+	public int getQuantidadeMotos() {
+		retornar listaMotos.size();
+	 }
+
+}
+
+
+Parte 2 
+
+pacote br.com.moto;
+importar java.util.ArrayList;
+
+agência de classe pública {
+	String nome;
+	
+	ArrayList<Moto> listaMotos = novo ArrayList<Moto>();
+	
+	public void adicionarMoto (Moto moto) {
+		listaMotos.add(moto);
+	 }
+	
+	public int getQuantidadeMotos() {
+		retornar listaMotos.size();
+	 }
+
+}
+
+Parte 3 
+
+pacote br.com.moto;
+importar br.com.arrayList.Carro;
+
+Diretor da classe pública {
+	public static void main (String args[]) {
+
+		Moto c1 = novo Moto();
+		c1.nome = "CG";
+		c1.cor = "Vermelha";
+		
+		Moto c2 = novo Moto();
+		c2.nome = "Tyges";
+		c2.cor = "Cinza";
+
+		
+		Agencia ag = nova Agencia();
+		ag.nome = "Feras";
+		ag.adicionarMoto(c1);
+		ag.adicionarMoto(c2);
+		
+		int gtdeMoto = ag.getQuantidadeMotos();
+		
+		System.out.println("A lista de Moto da agencia " + ag.nome + " possui " + gtdeMoto);
+		
+	 }
+	 }

@@ -1,0 +1,79 @@
+pacote br.com.arrayList;
+importar java.util.ArrayList;
+
+agência de classe pública {
+	String nome;
+	
+	//criando lista de carros do tipo Carro
+	ArrayList<Carro> listaCarros = novo ArrayList<Carro>();
+	
+	//criei metodo publico, se retorno para incluir tipos de Carro
+	//dentro da lista de carros
+	public void adicionarCarro (Carro carro) {
+		listaCarros.add(carro);
+	 }
+	
+	//ultilizando a propriedade size da classe arraylist para contar a quantidade de carros da lista
+	public int getQuantidadeCarros() {
+		return listaCarros.size();
+	 }
+	public double calcualarPrecoTotal(){
+		//percorrer lista e colocar um acumulador
+		double somaValor = 0,0 ;
+		para (int i=0; i<listaCarros.size();i++) {
+			Carro c = (Carro) listaCarros.get(i);
+			somaValor += c.valor;
+		 }
+		retornar somaValor;
+	 }
+}
+
+
+Parte 2 
+
+pacote br.com.arrayList;
+
+carro de classe pública {
+   String nome;
+   Cor de corda;
+   valor duplo;
+   
+}
+
+Parte 3 
+
+pacote br.com.arrayList;
+
+Diretor da classe pública {
+	public static void main (String args[]) {
+		
+		Carro c1 = novo Carro();
+		c1.nome = "Palio";
+		c1.cor = "Cinza";
+		c1.valor = 40.000;
+		
+		Carro c2 = novo Carro();
+		c2.nome = "Gol";
+		c2.cor = "Preto";
+		c2.valor = 80.000;
+		
+		Carro c3 = novo Carro();
+		c3.nome = "Novo C3";
+		c3.cor = "Azul/Preto";
+		c3.valor = 70,00;
+		
+		Agencia ag = nova Agencia();
+		ag.nome = "Feras";
+		ag.adicionarCarro(c1);
+		ag.adicionarCarro(c2);
+		ag.adicionarCarro(c3);
+		
+		int gtdeCarros = ag.getQuantidadeCarros();
+		double gtdeValor = ag.calcualarPrecoTotal();
+		
+		System.out.println("A lista de carros da agencia " + ag.nome + " possui " + gtdeCarros);
+		System.out.println("Valor total de carros da agencia " + ag.nome + " é " + gtdeValor);
+		
+	 }
+
+}

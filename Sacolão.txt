@@ -1,0 +1,71 @@
+pacote br.com.sacolao;
+
+classe pública Fruta {
+	 String nome;
+	 valor duplo;
+	 
+}
+
+Parte 2 
+
+pacote br.com.sacolao;
+
+Diretor da classe pública {
+public static void main (String args[]) {
+		
+		Fruta f1 = novo Fruta();
+		f1.nome = "Uva";
+		f1.valor = 10.50;
+		
+		Fruta f2 = novo Fruta();
+		f2.nome = "Melancia";
+		f2.valor = 12.0;
+		
+		Fruta f3 = nova Fruta ();
+		f3.nome = "Banana";
+		f2.valor = 7.0;
+		
+		Sacolao sa = novo Sacolao ();
+		sa.adicionarFruta(f1);
+		sa.adicionarFruta(f2);
+		sa.adicionarFruta(f3);
+		
+		int gtdeFrutas = sa.getQuantidadeFruta();
+		double gtdeValor = sa.CalcularFruta();
+		
+		System.out.println("A lista frutas " + "possui " + gtdeFrutas);
+		System.out.println("O valor das frutas é " + gtdeValor);
+
+}
+}
+
+
+Parte 3 
+
+
+pacote br.com.sacolao;
+importar java.util.ArrayList;
+
+classe pública Sacolao {
+	String nome;
+	
+	ArrayList<Fruta> listaFrutas = new ArrayList<Fruta>();
+	
+	public void adicionarFruta (Fruta fruta) {
+		listaFrutas.add(fruta);
+	 }
+	
+	public int getQuantidadeFruta() {
+		retornar listaFrutas.size();
+	 }
+	
+	dupla pública CalcularFruta() {
+		double somaValor = 0,0 ;
+		for (int i=0; i<listaFrutas.size();i++) {
+			Fruta f = (Fruta) listaFrutas.get(i);
+			somaValor += f.valor;
+		 }
+		retornar somaValor;
+	 }
+		
+	 }
