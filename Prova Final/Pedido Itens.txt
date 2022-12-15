@@ -1,0 +1,32 @@
+package Questão2;
+
+public class Pedido extends Pedido_Itens{
+    private int itens_pedido;
+    private int qtd_itens_pedido;
+    private int precoTotal;
+    public Cliente(int  itens_pedido; int qtd_itens_pedido; int precoTotal;{
+        
+        this.itens_pedido = pedido;
+        this.qtd_itens_pedido = qtd_itens_pedido;
+        this.itens_pedido = itens_pedido;
+    }
+    public String getitens_pedido() {
+        return numeroPedido;
+    }
+    public void setitens_pedido(int pedido) {
+        this.itens_pedido = itens_pedido;
+    }
+    public int getqtd_itens_pedido() {
+        return qtd_itens_pedido;
+    }
+    public void setqtd_itens_pedido(int pedido) {
+        this.qtd_itens_pedido = qtd_itens_pedido;
+    }
+    public String getprecoTotal() {
+        return precoTotal;
+    }
+    public void setitens_pedido(String itens_pedido) {
+        this.precoTotal = itens_pedido;
+    }
+
+}
